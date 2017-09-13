@@ -1,0 +1,21 @@
+﻿<html>
+  <head>
+    <script src="js/vis.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="css/vis.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+    <div id="form" class="col col-1">
+      <h2>Выберите тип выражения:</h2>
+      <input type="radio" name="radio" value=l id="rb-1" checked><label for="rb-1">Префиксная нотация</label><br> 
+      <input type="radio" name="radio" value=2 id="rb-2"><label for="rb-2">Постфиксная нотация</label>
+      <h2>Введите выражение:</h2>
+      <input type="text" placeholder="Введите строку" id="expression">
+      <input type="button" value="Отправить" onclick="calculateExpression()">
+      <h2>Результат: <span id="result"></span></h2>
+    </div>
+    <div id="graph" class="col col-2"></div>
+  </body>
+</ht

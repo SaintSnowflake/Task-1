@@ -1,0 +1,30 @@
+﻿body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+input {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.col {
+  padding: 16px;
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+.col-2 {
+  float: right;
+}
+
+h2~#result:empty {
+  display: none;
