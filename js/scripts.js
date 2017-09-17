@@ -60,9 +60,9 @@ function calculate(operator, firstOperand, secondOperand) {
 
 function drawGraph(operators) {
   var GraphCell = function(id, label) {
-  	this.id = id;
+    this.id = id;
     this.label = label;
-	}
+  }
   var nodes = new vis.DataSet();
   var edges = new vis.DataSet();
   var stack = [];
@@ -80,7 +80,7 @@ function drawGraph(operators) {
       edges.add({from: operators[i].id, to: firstChild.id});
       edges.add({from: operators[i].id, to: secondChild.id});
       stack.push(operators[i]);
-  	}
+    }
   }
   var container = document.getElementById('graph');
   var data = {nodes: nodes, edges: edges};
